@@ -1,4 +1,4 @@
-public class Replce0by1 {
+public class Replace0by1 {
 
     public static void main(String[] args) {
         int n =7503020;
