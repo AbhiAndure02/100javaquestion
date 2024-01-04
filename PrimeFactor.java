@@ -1,41 +1,37 @@
 public class PrimeFactor {
 
-   static boolean isprime(int n){
-       if (n<2){
-           return false;
+   public static int isprime(int n){
+       for(int i = 2; i<=Math.sqrt(n); i++){
+           if(n%i==0)
+               return 0;
        }
-        int count =0;
-        for (int i = 1; i < n; i++) {
-            if (n % i == 0) {
-                count++;
-            }
-        }
 
-      
-            if (count>2){
-                return false;
-            }
+       return 1;
+   }
 
 
 
-        return true;
+     public static void factor(int n) {
+        {
 
-    }
-
-    static void factor(int n){
-        for (int i = 1; i <= n; i++) {
-
-            if(n%i==0){
-                if(isprime(i)){
-                    System.out.println(i);
+            for (int i = 2; i <= n; i++) {
+                if (isprime(i) == 1) {
+                    int x = n;
+                    while (x % i == 0) {
+                        System.out.print(i + " ");
+                        x /= i;
+                    }
                 }
             }
+
         }
-    }
+
+
+
+
+        }
 
     public static void main(String[] args) {
         factor(12);
-
-
     }
-}
+    }
