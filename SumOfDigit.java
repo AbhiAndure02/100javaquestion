@@ -7,8 +7,8 @@ public class SumOfDigit {
             n = n/10;
         }
         return sum;
-
     }
+
     public static void main(String[] args) {
 
         System.out.println(findSum(143));
