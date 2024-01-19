@@ -10,7 +10,7 @@
 
 
 public class EquationBase {
-    public static void equaltion(int n){
+    public static void equation(int n){
         int temp =0;
         for (int i = 1; i <= n; i++) {
             temp = (3*i)+2;
@@ -22,6 +22,6 @@ public class EquationBase {
     }
     public static void main(String[] args) {
         int number = 10;
-        equaltion(number);
+        equation(number);
     }
 }
