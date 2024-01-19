@@ -6,17 +6,21 @@
 //
 //Input:- 10
 //
-//Output:- 5 11 14 17 23 26 29
+//Output:- 5 11 14 17 23 26 29 35 38
 
 
 public class EquationBase {
     public static void equation(int n){
         int temp =0;
-        for (int i = 1; i <= n; i++) {
-            temp = (3*i)+2;
+        int i=0;
+        int x = 0;
+        while(i<n){
+            temp = (3*x)+2;
             if(temp % 4 != 0){
                 System.out.println(temp);
+                i++;
             }
+            x++;
 
         }
     }
